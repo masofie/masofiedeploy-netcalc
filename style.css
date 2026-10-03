@@ -1,0 +1,148 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:'Segoe UI',sans-serif;
+    background:#f1f5f9;
+    color:#1e293b;
+}
+
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.calculator{
+    width:100%;
+    max-width:750px;
+    background:#ffffff;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+    overflow:hidden;
+}
+
+.header{
+    padding:25px;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.brand{
+    color:#2563eb;
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:.9rem;
+}
+
+.header h1{
+    margin-top:8px;
+    font-size:1.8rem;
+    color:#0f172a;
+}
+
+.header p{
+    margin-top:8px;
+    color:#64748b;
+}
+
+.form-section{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.form-section label{
+    font-weight:600;
+}
+
+.form-section input{
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+.form-section input:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+button{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.results-section{
+    padding:25px;
+    background:#eff6ff;
+    border-top:1px solid #dbeafe;
+}
+
+.results-section h2{
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+.result-item{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #dbeafe;
+}
+
+.result-item:last-child{
+    border-bottom:none;
+}
+
+.result-item span{
+    color:#475569;
+}
+
+.result-item strong{
+    color:#0f172a;
+}
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:1.4rem;
+    }
+
+    .result-item{
+        flex-direction:column;
+        gap:5px;
+        align-items:flex-start;
+    }
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#64748b;
+    font-size:0.9rem;
+    border-top:1px solid #e2e8f0;
+    background:#ffffff;
+}

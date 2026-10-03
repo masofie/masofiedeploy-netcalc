@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Redes IPv4 | MasofieDeploy</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <div class="calculator">
+
+        <div class="header">
+            <span class="brand">MASOFIEDEPLOY</span>
+            <h1>Calculadora de Redes IPv4</h1>
+            <p>Herramienta para el cálculo de redes IPv4.</p>
+        </div>
+
+        <div class="form-section">
+
+            <label for="ipAddress">Dirección IP</label>
+            <input
+                type="text"
+                id="ipAddress"
+                placeholder="192.168.1.10">
+
+            <label for="subnetMask">Máscara de Subred</label>
+            <input
+                type="text"
+                id="subnetMask"
+                placeholder="255.255.255.0">
+
+            <button id="calculateBtn">
+                Calcular
+            </button>
+
+        </div>
+
+        <div class="results-section">
+
+            <h2>Resultados</h2>
+
+            <div class="result-item">
+                <span>Dirección de Red</span>
+                <strong id="networkAddress">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Broadcast</span>
+                <strong id="broadcastAddress">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Rango de Hosts</span>
+                <strong id="hostRange">-</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Número de Hosts</span>
+                <strong id="hostCount">-</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 MasofieDeploy. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
